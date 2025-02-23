@@ -14,7 +14,6 @@ async def websocket_endpoint(websocket: WebSocket):
     try:
         while True:
             data = await websocket.receive_text()
-            # ...process data...
             await websocket.send_text(f"Order status updated: {data}")
     except Exception:
         await websocket.close()

@@ -1,5 +1,6 @@
 # Byte-compiled files and caches
 __pycache__/
+**/__pycache__/
 *.py[cod]
 *$py.class
 
