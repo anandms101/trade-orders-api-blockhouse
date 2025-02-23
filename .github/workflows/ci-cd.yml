@@ -48,6 +48,6 @@ jobs:
           username: ${{ secrets.EC2_USER }}
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
-            docker stop trade-orders-api || true
-            docker rm trade-orders-api || true
-            docker run -d --name trade-orders-api -p 80:80 trade-orders-api
+            sudo docker stop trade-orders-api || true
+            sudo docker rm trade-orders-api || true
+            sudo docker run -d --name trade-orders-api -p 80:80 trade-orders-api
